@@ -1,0 +1,97 @@
+  .skills {
+            background-color: white;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category {
+            --float-duration: 4.5s;
+            background-color: var(--gray-color);
+            background-image: linear-gradient(rgba(25, 35, 45, 0.78), rgba(25, 35, 45, 0.88)), var(--skill-image);
+            background-position: center;
+            background-size: cover;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .skill-category h3 {
+            color: white;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        }
+
+        .skill-category:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background-color: white;
+            animation: skillFloat var(--float-duration) ease-in-out infinite;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            animation-play-state: paused;
+        }
+
+        .skill-category:nth-child(2) {
+            --float-duration: 5.2s;
+        }
+
+        .skill-category:nth-child(3) {
+            --float-duration: 4.1s;
+        }
+
+        .skill-category:nth-child(4) {
+            --float-duration: 5.8s;
+        }
+
+        .skill-category:nth-child(5) {
+            --float-duration: 4.8s;
+        }
+
+        .skill-category:nth-child(6) {
+            --float-duration: 5.5s;
+        }
+
+        .skill-tag:nth-child(2n) {
+            animation-delay: -1.4s;
+        }
+
+        .skill-tag:nth-child(3n) {
+            animation-delay: -2.7s;
+        }
+
+        @keyframes skillFloat {
+            0%, 100% {
+                transform: translateY(0) rotate(-1deg);
+            }
+            50% {
+                transform: translateY(-7px) rotate(1deg);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .skill-tag {
+                animation: none;
+            }
+        }

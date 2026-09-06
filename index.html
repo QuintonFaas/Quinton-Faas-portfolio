@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quinton Faas - IT Lecturer Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/skills.css" />
+    <link rel="stylesheet" href="CSS/hero.css" />
+    <link rel="stylesheet" href="CSS/head_and_navigation.css" />
+    <link rel="stylesheet" href="CSS/experience_and_education.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/animations.css" />
+    <link rel="stylesheet" href="CSS/animation_resposive.css" />
+    <link rel="stylesheet" href="CSS/chatbot.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header id="header">
+      <div class="container header-content">
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#ai">AI</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="logo hero-logo">My<span>Profile</span></div>
+          <h1>Quinton Faas</h1>
+          <h3>IT Lecturer & <span>Software Engineer</span></h3>
+        </div>
+        <div class="hero-image">
+          <img
+            class="profile-photo"
+            src="assets/myProfilePictureWhiteBackground.png"
+            alt="Quinton Faas"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a dedicated IT lecturer and Software Engineering professional
+              with extensive experience in teaching, mentoring, and technical
+              training. My passion lies in equipping students with the skills
+              and knowledge required to excel in modern software development
+              environments.
+            </p>
+            <p>
+              With a strong foundation in programming, software engineering
+              principles, and system design, I focus on delivering engaging,
+              practical learning experiences that bridge the gap between theory
+              and real-world application. I am committed to preparing future
+              software engineers to solve complex problems, write clean and
+              secure code, and adapt to evolving technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section class="chatbot-section" id="ai">
+      <div class="container">
+        <h2>Ask Me Anything</h2>
+        <p class="chatbot-description">
+          Have questions about my experience, skills, or qualifications? Ask the
+          chatbot!
+        </p>
+
+        <div class="chatbot-container">
+          <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chatbot-message bot">
+              <div class="message-content">
+                <i class="fas fa-robot"></i>
+                <p>
+                  Hi! I'm Quinton's AI assistant. Ask me anything about his
+                  experience, skills, education, or qualifications. 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chatbot-input-container">
+            <input
+              type="text"
+              id="chatbot-input"
+              placeholder="Ask me a question..."
+              class="chatbot-input"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send
+            </button>
+            <button id="chatbot-clear" class="chatbot-clear-btn" type="button">
+              <i class="fas fa-trash-can" aria-hidden="true"></i>
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+          <!-- Timeline items will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <!-- Timeline items will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-container">
+          <!-- Skill categories will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <i class="fas fa-location-dot" aria-hidden="true"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Bloemfontein, Free State, South Africa</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:0720191906">0720191906</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:quintonmadiba007@gmail.com">quintonmadiba007@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-id-card" aria-hidden="true"></i>
+            <div>
+              <h3>Drivers Licence</h3>
+              <p>C1</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-language" aria-hidden="true"></i>
+            <div>
+              <h3>Languages</h3>
+              <p>English, Xhosa, Sepedi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="http://linkedin.com/in/quinton-faas1a2b7a240/"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/QuintonFaas"
+            class="social-link"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:quintonmadiba007@gmail.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p>
+          &copy; <span id="current-year"></span> Quinton Faas. All Rights
+          Reserved.
+        </p>
+        <p>IT Lecturer Portfolio</p>
+      </div>
+    </footer>
+
+    <script src="javascript/chatbot.js"></script>
+
+    <script src="javascript/footer.js"></script>
+
+    <script src="javascript/cv.js"></script>
+    <script src="javascript/populate.js"></script>
+    <script src="javascript/scroll-animation.js"></script>
+
+    <script src="javascript/aminate-detail-item-on-scroll.js"></script>
+  </body>
+</html>
