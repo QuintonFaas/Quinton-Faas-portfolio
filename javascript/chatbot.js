@@ -11,7 +11,7 @@ const portfolioAnswers = [
 	},
 	{
 		keywords: ["skill", "programming", "language", "technology"],
-		answer: "His skills include C#, JavaScript, Python, Dart, MySQL, HTML, CSS, Flutter, Django, ASP.NET, Git, DevOps, and software engineering fundamentals.",
+		answer: "His skills include C#, JavaScript, Python, Dart, MySQL, HTML, CSS, Flutter, Django, ASP.NET, Git, and software engineering fundamentals.",
 	},
 	{
 		keywords: ["education", "degree", "study", "qualification"],
