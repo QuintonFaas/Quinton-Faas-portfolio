@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="CSS/skills.css" />
     <link rel="stylesheet" href="CSS/hero.css" />
     <link rel="stylesheet" href="CSS/head_and_navigation.css" />
-    <link rel="stylesheet" href="CSS/experience_and_education.css" />
+    <link rel="stylesheet" href="CSS/exp_and _edu.css" />
     <link rel="stylesheet" href="CSS/about.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/animations.css" />
     <link rel="stylesheet" href="CSS/animation_resposive.css" />
     <link rel="stylesheet" href="CSS/chatbot.css" />
+    <link rel="stylesheet" href="CSS/dark-mode.css" />
+    <link rel="stylesheet" href="CSS/scroll-animations.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -42,6 +44,9 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
       </div>
     </header>
 
@@ -188,6 +193,17 @@
             </div>
           </div>
           <div class="contact-item">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            <div>
+              <h3>LinkedIn</h3>
+              <p>
+                <a href="https://www.linkedin.com/in/quinton-faas-1a2b7a240/" target="_blank" rel="noopener noreferrer">
+                  View LinkedIn Profile
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-item">
             <i class="fas fa-id-card" aria-hidden="true"></i>
             <div>
               <h3>Drivers Licence</h3>
@@ -236,6 +252,7 @@
 
     <script src="javascript/chatbot.js"></script>
 
+    <script src="javascript/header.js"></script>
     <script src="javascript/footer.js"></script>
 
     <script src="javascript/cv.js"></script>

@@ -48,7 +48,7 @@
         .timeline-content {
             padding: 20px;
             background-color: white;
-            border-radius: 8px;
+            border-radius: 16px;
             box-shadow: var(--shadow);
             position: relative;
         }
@@ -101,4 +101,46 @@
         .timeline-item:nth-child(even) .timeline-icon {
             left: -20px;
             right: auto;
+        }
+
+        #experience .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: none;
+        }
+
+        #experience .timeline:before,
+        #experience .timeline-content:after {
+            display: none;
+        }
+
+        #experience .timeline-item,
+        #experience .timeline-item:nth-child(odd),
+        #experience .timeline-item:nth-child(even) {
+            width: auto;
+            left: auto;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        #experience .timeline-content {
+            min-height: 100%;
+            padding: 28px 24px 24px;
+            border-top: 4px solid var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        #experience .timeline-content:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        #experience .timeline-icon,
+        #experience .timeline-item:nth-child(even) .timeline-icon {
+            position: static;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 16px;
         }

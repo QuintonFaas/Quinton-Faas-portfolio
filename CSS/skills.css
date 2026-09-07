@@ -11,13 +11,37 @@
         .skill-category {
             --float-duration: 4.5s;
             background-color: var(--gray-color);
-            background-image: linear-gradient(rgba(25, 35, 45, 0.78), rgba(25, 35, 45, 0.88)), var(--skill-image);
-            background-position: center;
-            background-size: cover;
             padding: 25px;
             border-radius: 10px;
             box-shadow: var(--shadow);
             transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-category::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(25, 35, 45, 0.18), rgba(25, 35, 45, 0.42)), var(--skill-image);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+
+        .skill-background {
+            position: absolute;
+            inset: 0;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+
+        .skill-category > *:not(.skill-background) {
+            position: relative;
+            z-index: 1;
         }
 
         .skill-category h3 {

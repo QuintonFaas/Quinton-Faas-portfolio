@@ -29,11 +29,43 @@
 }
 
 .hero-text h1 {
-    animation: textShine 3s ease-in-out infinite alternate, heroTextFloat 5.5s ease-in-out infinite;
+    background-image: linear-gradient(90deg, var(--secondary-color), var(--accent-color), var(--primary-color), var(--secondary-color));
+    background-size: 300% 300%;
+    animation: textShine 3s ease-in-out infinite alternate, heroTextColorCycle 6s ease-in-out infinite, heroTextFloat 5.5s ease-in-out infinite;
 }
 
 .hero-text h3 {
-    animation: heroTextFloat 5.5s ease-in-out 0.3s infinite;
+    animation: heroTextColorCycle 5s ease-in-out infinite reverse, heroTextFloat 5.5s ease-in-out 0.3s infinite;
+    transition: filter 0.3s ease;
+}
+
+.hero-text h3 span {
+    animation: heroAccentColorCycle 4s ease-in-out infinite;
+}
+
+@media (hover: hover) {
+    .hero-text h1:hover,
+    .hero-text h3:hover {
+        filter: brightness(1.2) saturate(1.35);
+    }
+}
+
+@keyframes heroTextColorCycle {
+    0%, 100% {
+        color: var(--primary-color);
+    }
+    50% {
+        color: var(--secondary-color);
+    }
+}
+
+@keyframes heroAccentColorCycle {
+    0%, 100% {
+        color: var(--secondary-color);
+    }
+    50% {
+        color: var(--accent-color);
+    }
 }
 
 @keyframes heroTextFloat {
@@ -51,7 +83,8 @@
     }
 
     .hero-text h1,
-    .hero-text h3 {
+    .hero-text h3,
+    .hero-text h3 span {
         animation: none;
     }
 
@@ -73,7 +106,8 @@
     height: 460px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: var(--shadow);
+    border: none;
+    box-shadow: none;
 }
 
 .upload-btn {

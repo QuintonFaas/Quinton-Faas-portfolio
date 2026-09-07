@@ -91,6 +91,14 @@
         }
 
         @media (max-width: 768px) {
+            header {
+                left: 0;
+                width: 100%;
+                padding: 15px 0;
+                border-radius: 0 0 18px 18px;
+                transform: none;
+            }
+
             .nav-links {
                 position: fixed;
                 top: 70px;
@@ -119,6 +127,12 @@
                 display: block;
                 position: absolute;
                 right: 20px;
+            }
+
+            .theme-toggle {
+                position: absolute;
+                left: 20px;
+                margin-left: 0;
             }
             
             h1 {

@@ -43,13 +43,18 @@
       skillsData.forEach((skillCategory) => {
         const skillElement = document.createElement("div");
         skillElement.className = "skill-category";
-        skillElement.style.setProperty("--skill-image", `url("${skillCategory.image}")`);
+        const skillImageUrl = encodeURI(skillCategory.image);
+        skillElement.style.setProperty("--skill-image", `url("${skillImageUrl}")`);
+        skillElement.dataset.skillImage = skillImageUrl;
         skillElement.innerHTML = `
+                                <div class="skill-background" aria-hidden="true"></div>
                 <h3>${skillCategory.category}</h3>
                 <div class="skill-items">
                     ${skillCategory.skills.map((skill) => `<span class="skill-tag">${skill}</span>`).join("")}
                 </div>
             `;
+                skillElement.querySelector(".skill-background").style.backgroundImage =
+                    `linear-gradient(rgba(25, 35, 45, 0.18), rgba(25, 35, 45, 0.42)), url("${skillImageUrl}")`;
         skillsContainer.appendChild(skillElement);
       });
 
