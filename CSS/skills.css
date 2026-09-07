@@ -4,14 +4,14 @@
 
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
         }
 
         .skill-category {
             --float-duration: 4.5s;
             background-color: var(--gray-color);
-            padding: 25px;
+            padding: 18px;
             border-radius: 10px;
             box-shadow: var(--shadow);
             transition: var(--transition);
@@ -56,16 +56,16 @@
         .skill-items {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
+            gap: 8px;
+            margin-top: 12px;
         }
 
         .skill-tag {
             background-color: white;
             animation: skillFloat var(--float-duration) ease-in-out infinite;
-            padding: 8px 15px;
+            padding: 6px 11px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 500;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
             transition: var(--transition);

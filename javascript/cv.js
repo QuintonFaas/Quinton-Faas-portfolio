@@ -96,9 +96,7 @@
           category: "Software Development",
           image: "assets/skills/software Development.jpg",
           skills: [
-            "Scrum Methodology",
             "Git",
-            "DevOps",
             "Data Structures",
             "Algorithms",
             "OOP",
@@ -108,7 +106,6 @@
           category: "IT Fundamentals",
           image: "assets/skills/IT fundamentals.jpg",
           skills: [
-            "Networking",
             "Data Storage",
             "Embedded Systems",
             "Integration",

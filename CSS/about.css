@@ -15,6 +15,30 @@
   padding-right: 40px;
 }
 
+.cv-download {
+  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+  animation: cvButtonFloat 3s ease-in-out infinite;
+}
+
+.cv-download:hover {
+  background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+}
+
+@keyframes cvButtonFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-download {
+    animation: none;
+  }
+}
+
 .about-details {
   flex: 1;
   min-width: 300px;
