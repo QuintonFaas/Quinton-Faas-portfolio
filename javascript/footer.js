@@ -1,8 +1,6 @@
-// Set current year in footer
       document.getElementById("current-year").textContent =
         new Date().getFullYear();
 
-      // Mobile menu toggle
       const mobileMenuBtn = document.getElementById("mobile-menu-btn");
       const navLinks = document.getElementById("nav-links");
 

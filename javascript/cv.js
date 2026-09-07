@@ -1,4 +1,3 @@
-      // Experience data from CV
       const experienceData = [
         {
           date: "2024 - Present",
@@ -44,7 +43,6 @@
         },
       ];
 
-      // Education data from CV
       const educationData = [
         {
           date: "2025",
@@ -70,7 +68,6 @@
         },
       ];
 
-      // Skills data from CV
       const skillsData = [
         {
           category: "Lecture Delivery",

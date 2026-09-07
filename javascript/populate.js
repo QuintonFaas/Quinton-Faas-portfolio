@@ -1,4 +1,3 @@
- // Populate experience timeline
       const experienceTimeline = document.querySelector(
         "#experience .timeline",
       );
@@ -19,7 +18,6 @@
         experienceTimeline.appendChild(timelineItem);
       });
 
-      // Populate education timeline
       const educationTimeline = document.querySelector("#education .timeline");
       educationData.forEach((edu, index) => {
         const timelineItem = document.createElement("div");
@@ -38,7 +36,6 @@
         educationTimeline.appendChild(timelineItem);
       });
 
-      // Populate skills
       const skillsContainer = document.querySelector(".skills-container");
       skillsData.forEach((skillCategory) => {
         const skillElement = document.createElement("div");
@@ -58,9 +55,6 @@
         skillsContainer.appendChild(skillElement);
       });
 
-      // After populating skills, refresh animations
 skillsData.forEach((skillCategory) => {
-    // ... your existing code
 });
-// Add this line:
 if (typeof refreshScrollAnimations === 'function') refreshScrollAnimations();

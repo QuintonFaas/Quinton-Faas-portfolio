@@ -25,6 +25,20 @@ body.dark-mode .skills {
     background: #111820;
 }
 
+body.dark-mode .services-page,
+body.dark-mode .service-card {
+    background: #202d3a;
+}
+
+body.dark-mode .service-card h3,
+body.dark-mode .service-card li {
+    color: #e8eef5;
+}
+
+body.dark-mode .service-card > p:not(.service-number) {
+    color: #c3cfdb;
+}
+
 body.dark-mode .contact,
 body.dark-mode .experience,
 body.dark-mode .education {
